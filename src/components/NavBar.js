@@ -1,28 +1,37 @@
+import NavBar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
-import Navbar from 'react-bootstrap/Navbar';
+import Button from 'react-bootstrap/Button';
 
-function NavBar() {
+
+function Navbar() {
     return (
-        <NavBar>
-            <Container>
-                <NavBar.Brand>logo</NavBar.Brand>
-                <Form>
-                    <Form.Control placeholder="Search">
+        <>
+            <NavBar>
+                <Container>
+                    {/* <NavBar.Brand></NavBar.Brand> */}
+                    <div>logo</div>
+                    <Form>
+                        <div>search-bar</div>
+                        {/* <Form.Control placeholder="Search"></Form.Control> */}
+                    </Form>
 
-                    </Form.Control>
-                </Form>
+                    <Button>
+                        <div>Create post</div>
+                    </Button>
+                    <div>
+                        <div>notificacion</div>
+                        <div>avatar</div>
+                    </div>
 
 
 
-                <div>Create post</div>
-                <div>notificación</div>
-                <div>avatar</div>
+                </Container>
+            </NavBar>
+        </>
 
-            </Container>
-        </NavBar>
     )
 
 }
 
-export default NavBar;
+export default Navbar;
